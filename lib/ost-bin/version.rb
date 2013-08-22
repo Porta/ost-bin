@@ -1,5 +1,5 @@
 require "ost"
 
 module Ost::Bin
-  VERSION = "0.0.3"
+  VERSION = "0.0.4"
 end

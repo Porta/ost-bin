@@ -38,6 +38,14 @@ You can kill a daemonized worker by issuing the `stop` command:
 
 This will send the `TERM` signal to the process.
 
+
+Optionally, you can specify a different directory for the pid file.
+
+    $ost -d stuff -p tmp
+    
+Will look for the pid file in `./tmp/` instead of the default `./workers/` directory. This is useful if you're using a deploy tool like Capistrano and need to place the pid files in a symlinked dir.
+
+
 Support
 -------
 
